@@ -8,7 +8,7 @@ import (
 type GormLogger struct {}
 
 func (l *GormLogger) Print(args ...interface{}) {
-    LogMysql(too.GetTraceId(), l.formatGormInfo(args)...)
+    LogMysql(tool.GetTraceId(), l.formatGormInfo(args)...)
 }
 
 func (l *GormLogger) formatGormInfo(info []interface{}) ([]interface{}) {
