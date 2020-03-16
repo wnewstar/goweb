@@ -37,7 +37,6 @@ func init() {
 
 func initTimer() {
     method := "App-Bar-Model-initTimer"
-    logobj := getZapLogObjByLogType("app")
     ticker := time.NewTicker(time.Second * 1800)
     for {
         t := <-ticker.C
@@ -45,7 +44,7 @@ func initTimer() {
         initOption()
         initWriter()
         traceid := tool.GetTraceId()
-        logobj.Infow(traceid, "func", method, "ticker", s)
+        getZapLogObjByLogType("app").Infow(traceid, "func", method, "ticker", s)
     }
 }
 
@@ -58,7 +57,7 @@ func initOption() {
     timezone, _ := time.LoadLocation("Asia/Shanghai")
 
     vOption = tOption{
-        MaxSize: 1000,
+        MaxSize: 1000000,
         LogPath: logpath,
         FileExt: fileext,
         LogType: "app|mysql|debug|error|request|response",
