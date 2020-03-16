@@ -1,0 +1,6 @@
+{
+    "env": "prod",
+    "log": {
+        "path": "/data/base/data/log"
+    }
+}

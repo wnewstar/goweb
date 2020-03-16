@@ -1,0 +1,6 @@
+{
+    "env": "prep",
+    "log": {
+        "path": "/data/base/data/log"
+    }
+}
