@@ -1,4 +1,5 @@
 .idea/
+go.sum
 bin/*
 vendor/*
 data/log/*
