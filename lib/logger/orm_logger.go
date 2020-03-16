@@ -2,12 +2,13 @@ package logger
 
 import (
     "fmt"
+    "goweb/lib/tool"
 )
 
 type GormLogger struct {}
 
 func (l *GormLogger) Print(args ...interface{}) {
-    LogMysql("sql", l.formatGormInfo(args)...)
+    LogMysql(too.GetTraceId(), l.formatGormInfo(args)...)
 }
 
 func (l *GormLogger) formatGormInfo(info []interface{}) ([]interface{}) {

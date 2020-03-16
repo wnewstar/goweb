@@ -1,6 +1,7 @@
 package controller
 
 import (
+    "goweb/lib/logger"
     "github.com/gin-gonic/gin"
     ModelBar "goweb/app/bar/model"
 )

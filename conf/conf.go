@@ -11,7 +11,7 @@ import (
 var AppConfig *viper.Viper
 var TestConfig *viper.Viper
 
-var vAppPath = "/code/go/go-web"
+var vAppPath = "/code/go/goweb"
 var vTimeFormat = "2006-01-02 15:04:05"
 var vCnofNameMap = map[string]string{"deve": "deve", "test": "test", "prod": "prod", "prep": "prep"}
 

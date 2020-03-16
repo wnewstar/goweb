@@ -1,7 +1,7 @@
 {
     "env": "deve",
     "log": {
-        "path": "/code/go/go-web/data/log"
+        "path": "/code/go/goweb/data/log"
     },
     "db": {
         "mysql": {
